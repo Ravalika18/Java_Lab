@@ -1,0 +1,39 @@
+
+class Animal
+{
+	void sound()
+	{
+		System.out.println("Animal Sound is displayed:");
+	}
+}
+class Dog extends Animal
+{
+	void sound()
+	{
+		super.sound();
+		System.out.println("Dogs Bark..");
+	}
+}
+class Horse extends Animal
+{
+	void sound()
+	{
+		System.out.println("Horse Neighs..");
+	}
+}
+public class Main 
+{
+
+	public static void main(String[] args)
+	{
+		Dog d=new Dog();
+		d.sound();
+		Horse h=new Horse();
+		h.sound();
+		
+
+	}
+
+}
+
+
